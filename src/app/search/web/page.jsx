@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic"
+
 import WebSearchResult from "@/Components/WebSearchResult";
 import Link from "next/link";
 import React from "react";
