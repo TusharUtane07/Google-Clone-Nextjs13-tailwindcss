@@ -1,5 +1,4 @@
-export const dynamic = "force-dynamic"
-
+import dynamic from "next/dynamic";
 import ImageSearchResult from "@/Components/ImageSearchResult";
 import Link from "next/link";
 import React from "react";
@@ -13,10 +12,10 @@ const ImageSearchPage = async ({ searchParams }) => {
   if (!response.ok) {
     throw new Error("Something went wrong");
   }
-
+  
   const data = await response.json();
   const results = data.items;
-
+  
   if (!results) {
     return (
       <div className="flex flex-col justify-center items-center pt-10">
@@ -34,3 +33,5 @@ const ImageSearchPage = async ({ searchParams }) => {
 };
 
 export default ImageSearchPage;
+
+export const dynamic = "force-dynamic"
