@@ -1,4 +1,4 @@
-import dynamic from "next/dynamic";
+// import dynamic from "next/dynamic";
 import ImageSearchResult from "@/Components/ImageSearchResult";
 import Link from "next/link";
 import React from "react";
@@ -34,4 +34,4 @@ const ImageSearchPage = async ({ searchParams }) => {
 
 export default ImageSearchPage;
 
-export const dynamic = "force-dynamic"
+// export const dynamic = "force-dynamic"

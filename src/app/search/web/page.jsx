@@ -1,4 +1,4 @@
-import dynamic from "next/dynamic";
+// import dynamic from "next/dynamic";
 import WebSearchResult from "@/Components/WebSearchResult";
 import Link from "next/link";
 import React from "react";
@@ -34,4 +34,4 @@ const WebSearchPage = async ({ searchParams }) => {
 
 export default WebSearchPage;
 
-export const dynamic = "force-dynamic"
+// export const dynamic = "force-dynamic"
